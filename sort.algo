@@ -1,0 +1,15 @@
+ALGORITHM TRI
+VAR
+    i , aux ,j : INTEGER ;
+    t  : ARRAY_OF INTEGER[100];
+BEGIN
+    FOR i FROM 1 TO i<t.length   DO
+        aux = t[i];
+        j = i-1 ;
+        WHILE (j>=0 AND t[j]>aux) DO
+            t[i] = t[j+1];
+        END_WHILE
+        t[j+1] = aux ;
+    END_FOR
+
+END
